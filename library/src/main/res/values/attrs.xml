@@ -20,4 +20,12 @@
         </attr>
     </declare-styleable>
 
+    <!-- ShadowView 阴影 -->
+    <declare-styleable name="ShadowView">
+        <attr name="shadowLayoutColor" format="color"/>
+        <attr name="shadowLayoutRadiusEdge" format="dimension"/>
+        <attr name="shadowLayoutDx" format="dimension"/>
+        <attr name="shadowLayoutDy" format="dimension"/>
+    </declare-styleable>
+
 </resources>
