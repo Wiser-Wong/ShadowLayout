@@ -100,6 +100,19 @@ public class ShadowLayout extends FrameLayout {
 	}
 
 	@Override protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+		layoutMeasure();
+		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+	}
+
+	@Override protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+		layoutMeasure();
+		super.onLayout(changed, left, top, right, bottom);
+	}
+
+	/**
+	 * 布局计算
+	 */
+	private void layoutMeasure() {
 		if (this.getChildCount() == 1) {
 			View view = this.getChildAt(0);
 			mRectF.right = this.getMeasuredWidth() - mShadowRadiusEdge;
@@ -112,7 +125,6 @@ public class ShadowLayout extends FrameLayout {
 			params.topMargin = (int) mShadowRadiusEdge;
 			params.bottomMargin = (int) mShadowRadiusEdge;
 		}
-		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 	}
 
 	/**

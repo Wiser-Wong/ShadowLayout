@@ -13,7 +13,7 @@ import android.widget.RelativeLayout;
 
 /**
  * @author Wiser
- * 
+ *         <p>
  *         阴影布局
  */
 
@@ -81,7 +81,19 @@ public class ShadowLayout extends RelativeLayout {
 	}
 
 	@Override protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+		layoutMeasure();
 		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+	}
+
+	@Override protected void onLayout(boolean changed, int l, int t, int r, int b) {
+		layoutMeasure();
+		super.onLayout(changed, l, t, r, b);
+	}
+
+	/**
+	 * 布局计算
+	 */
+	private void layoutMeasure() {
 		float effect = mShadowRadius + dip2px(5);
 		float rectLeft = 0;
 		float rectTop = 0;
@@ -121,7 +133,6 @@ public class ShadowLayout extends RelativeLayout {
 		mRectF.right = rectRight;
 		mRectF.bottom = rectBottom;
 		this.setPadding(paddingLeft, paddingTop, paddingRight, paddingBottom);
-		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 	}
 
 	/**
