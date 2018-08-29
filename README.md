@@ -11,3 +11,15 @@ left:左边
 top:上边
 right:右边
 bottom:下边
+
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+  
+  
+dependencies {
+	        implementation 'com.github.Wiser-Wong:ShadowLayout:1.0.0'
+	}
