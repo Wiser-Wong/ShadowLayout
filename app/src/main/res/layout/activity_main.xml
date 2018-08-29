@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wiser.library.ShadowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:shadowColor="#66000000"
+    app:shadowDx="0dp"
+    app:shadowDy="0dp"
+    app:shadowRadius="10dp"
+    app:shadowSide="all">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:text="Hello World!"
+        android:textColor="@color/colorAccent"
+        android:textSize="40sp" />
+
+</com.wiser.library.ShadowLayout>
