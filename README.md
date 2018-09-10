@@ -21,5 +21,5 @@ allprojects {
   
   
 dependencies {
-	        implementation 'com.github.Wiser-Wong:ShadowLayout:1.0.0'
+	        implementation 'com.github.Wiser-Wong:ShadowLayout:1.0.1'
 	}
