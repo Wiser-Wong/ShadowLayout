@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.wiser.library.shadow.ShadowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.wiser.library.shadow.ShadowViewLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    app:shadowLayoutColor="@color/colorAccent"
-    app:shadowLayoutRadiusEdge="8dp">
+    app:isRadius="false"
+    app:shadowLayoutColor="#22000000"
+    app:shadowLayoutEdge="8dp"
+    app:shadowLayoutRadius="2dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@drawable/revision_white_radius_bg"
+        android:background="#ffffff"
         android:gravity="center"
         android:padding="20dp"
         android:text="Hello World!"
         android:textColor="@color/colorAccent"
         android:textSize="40sp" />
 
-</com.wiser.library.shadow.ShadowLayout>
+</com.wiser.library.shadow.ShadowViewLayout>

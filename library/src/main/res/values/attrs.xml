@@ -3,29 +3,31 @@
 
     <!-- ShadowLayout 阴影 -->
     <declare-styleable name="ShadowLayout">
-        <attr name="shadowColor" format="color"/>
-        <attr name="shadowRadius" format="dimension"/>
-        <attr name="shadowDx" format="dimension"/>
-        <attr name="shadowDy" format="dimension"/>
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowRadius" format="dimension" />
+        <attr name="shadowDx" format="dimension" />
+        <attr name="shadowDy" format="dimension" />
         <attr name="shadowShape">
-            <flag name="rectangle" value="0x0001"/>
-            <flag name="oval" value="0x0010"/>
+            <flag name="rectangle" value="0x0001" />
+            <flag name="oval" value="0x0010" />
         </attr>
         <attr name="shadowSide">
-            <flag name="all" value="0x1111"/>
-            <flag name="left" value="0x0001"/>
-            <flag name="top" value="0x0010"/>
-            <flag name="right" value="0x0100"/>
-            <flag name="bottom" value="0x1000"/>
+            <flag name="all" value="0x1111" />
+            <flag name="left" value="0x0001" />
+            <flag name="top" value="0x0010" />
+            <flag name="right" value="0x0100" />
+            <flag name="bottom" value="0x1000" />
         </attr>
     </declare-styleable>
 
     <!-- ShadowView 阴影 -->
     <declare-styleable name="ShadowView">
-        <attr name="shadowLayoutColor" format="color"/>
-        <attr name="shadowLayoutRadiusEdge" format="dimension"/>
-        <attr name="shadowLayoutDx" format="dimension"/>
-        <attr name="shadowLayoutDy" format="dimension"/>
+        <attr name="shadowLayoutColor" format="color" />
+        <attr name="shadowLayoutEdge" format="dimension" />
+        <attr name="shadowLayoutDx" format="dimension" />
+        <attr name="shadowLayoutDy" format="dimension" />
+        <attr name="shadowLayoutRadius" format="dimension" />
+        <attr name="isRadius" format="boolean" />
     </declare-styleable>
 
 </resources>
