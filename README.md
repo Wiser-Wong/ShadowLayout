@@ -1,6 +1,6 @@
 # ShadowLayout
-带阴影的布局
-shadowColor:阴影颜色
+### 带阴影的布局  
+shadowColor:阴影颜色  
 shadowRadius:阴影弧度
 shadowDx:阴影X轴偏移量
 shadowDy:阴影Y轴偏移量
