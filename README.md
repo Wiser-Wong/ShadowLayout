@@ -1,5 +1,5 @@
 # ShadowLayout
-### 带阴影的布局  
+## 带阴影的布局  
 shadowColor:阴影颜色  
 shadowRadius:阴影弧度  
 shadowDx:阴影X轴偏移量  
@@ -23,3 +23,6 @@ bottom:下边
     dependencies {
 	        implementation 'com.github.Wiser-Wong:ShadowLayout:1.0.1'
 	}
+
+### 截图
+![images](https://github.com/Wiser-Wong/ShadowLayout/blob/master/images/screenshot.gif)
