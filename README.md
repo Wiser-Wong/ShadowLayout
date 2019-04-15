@@ -25,4 +25,4 @@ bottom:下边
 	}
 
 ### 截图
-![images](https://github.com/Wiser-Wong/ShadowLayout/blob/master/images/screenshot.gif)
+![images](https://github.com/Wiser-Wong/ShadowLayout/blob/master/images/screenshot.jpg)
