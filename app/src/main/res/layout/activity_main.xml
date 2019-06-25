@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:background="#011019"
     android:orientation="vertical">
 
     <LinearLayout
@@ -15,12 +16,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            app:container_round_corner="container_corner_all"
             app:container_shadowColor="#000000"
             app:container_shadowRadius="10dp"
+            app:container_shadowRoundRadius="30dp"
             app:container_shadowShape="container_round_rectangle"
-            app:container_shadowSide="container_all"
-            app:container_round_corner="container_corner_all"
-            app:container_shadowRoundRadius="30dp">
+            app:container_shadowSide="container_all">
 
             <android.support.v7.widget.AppCompatImageView
                 android:layout_width="wrap_content"
@@ -35,12 +36,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            app:container_round_corner="container_corner_all"
             app:container_shadowColor="#000000"
             app:container_shadowRadius="20dp"
+            app:container_shadowRoundRadius="20dp"
             app:container_shadowShape="container_rectangle"
-            app:container_shadowSide="container_all"
-            app:container_round_corner="container_corner_all"
-            app:container_shadowRoundRadius="20dp">
+            app:container_shadowSide="container_all">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -54,16 +55,17 @@
                 android:textSize="40sp" />
 
         </com.wiser.library.shadow.ShadowContainer>
+
         <com.wiser.library.shadow.ShadowContainer
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            app:container_round_corner="container_corner_all"
             app:container_shadowColor="#000000"
             app:container_shadowRadius="10dp"
+            app:container_shadowRoundRadius="10dp"
             app:container_shadowShape="container_rectangle"
-            app:container_shadowSide="container_top|container_left"
-            app:container_round_corner="container_corner_all"
-            app:container_shadowRoundRadius="10dp">
+            app:container_shadowSide="container_top|container_left">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -84,12 +86,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center"
+        app:container_round_corner="container_corner_all"
+        app:container_shadowBackgroundColor="@color/colorAccent"
         app:container_shadowColor="#000000"
         app:container_shadowRadius="10dp"
+        app:container_shadowRoundRadius="10dp"
         app:container_shadowShape="container_rectangle"
-        app:container_shadowSide="container_top"
-        app:container_round_corner="container_corner_all"
-        app:container_shadowRoundRadius="5dp">
+        app:container_shadowSide="container_top">
 
         <TextView
             android:layout_width="match_parent"
