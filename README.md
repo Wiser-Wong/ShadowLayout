@@ -12,7 +12,7 @@
   
   
     dependencies {
-	        implementation 'com.github.Wiser-Wong:ShadowLayout:1.0.2'
+	        implementation 'com.github.Wiser-Wong:ShadowLayout:1.1'
 	}
 ## 使用方法
     <com.wiser.library.shadow.ShadowContainer
