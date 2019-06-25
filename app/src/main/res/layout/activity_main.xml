@@ -1,23 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.wiser.library.shadow.ShadowViewLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_gravity="center"
-    app:isRadius="false"
-    app:shadowLayoutColor="#22000000"
-    app:shadowLayoutEdge="8dp"
-    app:shadowLayoutRadius="2dp">
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="#ffffff"
-        android:gravity="center"
-        android:padding="20dp"
-        android:text="Hello World!"
-        android:textColor="@color/colorAccent"
-        android:textSize="40sp" />
+        android:orientation="vertical">
 
-</com.wiser.library.shadow.ShadowViewLayout>
+        <com.wiser.library.shadow.ShadowContainer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:container_shadowColor="#000000"
+            app:container_shadowRadius="10dp"
+            app:container_shadowShape="container_round_rectangle"
+            app:container_shadowSide="container_all"
+            app:container_round_corner="container_corner_all"
+            app:container_shadowRoundRadius="30dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/round"
+                android:gravity="center" />
+
+        </com.wiser.library.shadow.ShadowContainer>
+
+        <com.wiser.library.shadow.ShadowContainer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:container_shadowColor="#000000"
+            app:container_shadowRadius="20dp"
+            app:container_shadowShape="container_rectangle"
+            app:container_shadowSide="container_all"
+            app:container_round_corner="container_corner_all"
+            app:container_shadowRoundRadius="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Hello World!"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+
+        </com.wiser.library.shadow.ShadowContainer>
+    </LinearLayout>
+
+    <com.wiser.library.shadow.ShadowContainer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        app:container_shadowColor="#000000"
+        app:container_shadowRadius="10dp"
+        app:container_shadowShape="container_rectangle"
+        app:container_shadowSide="container_top"
+        app:container_round_corner="container_corner_all"
+        app:container_shadowRoundRadius="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@mipmap/bg"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Hello World!"
+            android:textColor="@color/colorAccent"
+            android:textSize="40sp" />
+
+    </com.wiser.library.shadow.ShadowContainer>
+
+</RelativeLayout>
