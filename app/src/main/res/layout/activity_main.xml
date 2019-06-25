@@ -46,7 +46,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Hello World!"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+
+        </com.wiser.library.shadow.ShadowContainer>
+        <com.wiser.library.shadow.ShadowContainer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:container_shadowColor="#000000"
+            app:container_shadowRadius="10dp"
+            app:container_shadowShape="container_rectangle"
+            app:container_shadowSide="container_top|container_left"
+            app:container_round_corner="container_corner_all"
+            app:container_shadowRoundRadius="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:background="#ffffff"
                 android:gravity="center"
                 android:padding="20dp"
